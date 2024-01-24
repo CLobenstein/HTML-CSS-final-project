@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML and CSS final project</title>
+    <meta name="description" content="My first projects on HTML and CSS." />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Work Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Days One"
+    />
+    <link rel="stylesheet" href="finalproject.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <img src="john.jpeg" alt="" />
+      <p>Hi! I'm John I love to code and make websites!</p>
+    </header>
+    <main>
+      <article class="aboutme" id="about">
+        <h2>About Me</h2>
+        <div>
+          <img src="john-aboutme - .jpeg" alt="" />
+          <div>
+            <p>
+              My name is John Smith and I love what I do. I love making
+              websites. I was introduces to the field ten years ago when I came
+              across a CompuSkills as.
+            </p>
+            <p>
+              I soon learned that web development was a very lucrative career
+              choice, so I took the Web Development course. Today, I couldn't be
+              happier with that decision.
+            </p>
+            <p>Checkout some of the projects I've done below.</p>
+          </div>
+        </div>
+      </article>
+      <article class="projects" id="projects">
+        <h2>Projects</h2>
+        <div>
+          <div>
+            <img src="kids.jpeg" alt="" />
+            <h3>Friends</h3>
+            <p>An HTML project about things to do with friends.</p>
+            <input
+              type="button"
+              value="View Project"
+              id="Friends"
+              name="Friends"
+            />
+          </div>
+          <div>
+            <img src="family.png" alt="" />
+            <h3>Family</h3>
+            <p>An HTML project about some facts about family.</p>
+            <input
+              type="button"
+              value="View Project"
+              id="Family"
+              name="Family"
+            />
+          </div>
+        </div>
+      </article>
+      <article class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>Use this form to get in touch. I would love to hear from you!</p>
+        <form action="">
+          <div class="form">
+            <div>
+              <div>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  minlength="4"
+                  maxlength="30"
+                  placeholder="Your name"
+                />
+              </div>
+              <div>
+                <label for="Subject">Subject</label>
+                <input
+                  type="text"
+                  name="Subject"
+                  id="Subject"
+                  required
+                  minlength="4"
+                  maxlength="50"
+                  placeholder="Reason for your"
+                />
+              </div>
+              <div>
+                <label for="Email">Email</label>
+                <input
+                  type="email"
+                  name="Email"
+                  id="Email"
+                  required
+                  placeholder="Your email"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="Message">Message</label>
+              <textarea name="Message" id="Message" required></textarea>
+            </div>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Submit" name="submit" />
+          </div>
+        </form>
+      </article>
+    </main>
+    <footer>
+      <p>This site is &copy 2022 Leora Waldman</p>
+    </footer>
+  </body>
+</html>

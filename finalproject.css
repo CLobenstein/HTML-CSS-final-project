@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #962ae6;
+  font-family: "Work Sans", sans-serif;
+  width: fit-content;
+}
+h2,
+h3 {
+  font-family: "Days One", sans-serif;
+  text-align: center;
+}
+header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+}
+header p {
+  font-size: 1.5em;
+}
+header img {
+  padding: 2em 2em;
+  width: 25em;
+  position: relative;
+  top: 60px;
+  z-index: -10;
+}
+nav {
+  background-color: #200e3d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+}
+nav a:hover {
+  color: #52c5ff;
+}
+img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+.aboutme {
+  border: 1em solid rgb(255 114 114 / 80%);
+  background-color: white;
+  padding: 2em;
+  margin: 3em;
+}
+.aboutme div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.aboutme div img {
+  width: 10em;
+  flex-basis: 20%;
+}
+.aboutme div div {
+  padding: 2em;
+  flex-basis: 80%;
+  flex-direction: column;
+  text-align: left;
+}
+.projects div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.projects div div {
+  background-color: white;
+  border-radius: 10px;
+  margin: 1.5em;
+  padding: 1em;
+  text-align: center;
+  font-size: 1em;
+  width: 350px;
+}
+input[type="button"] {
+  border: 2px solid lightblue;
+  border-radius: 20px;
+  width: 35%;
+  color: #962ae6;
+}
+input[type="button"]:hover {
+  border: 1px solid lightblue;
+  background-color: lightblue;
+  color: white;
+  font-weight: bold;
+}
+.contact {
+  background-color: rgba(3, 3, 3, 45%);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: none;
+}
+form > div {
+  padding: 1em;
+  margin: 0% 15%;
+}
+.form {
+  display: flex;
+}
+.form > div {
+  width: 100%;
+  margin: auto;
+  padding: 0em 0.7em;
+}
+label {
+  text-align: left;
+  display: block;
+  width: 100%;
+  padding-top: 0.5em;
+}
+input,
+textarea {
+  width: 100%;
+  border-radius: 4px;
+  padding: 0.5em;
+}
+textarea {
+  height: 11.4em;
+}
+.submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+input[type="submit"] {
+  background-color: lightblue;
+  color: #1d3d5f;
+  width: 12em;
+  margin: 0em 0.5em;
+}
+input[type="submit"]:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+footer {
+  background-color: #1f2027;
+  color: white;
+  padding: 1em;
+}
+@media screen and (max-width: 570px) {
+  .aboutme {
+    padding: 0em;
+  }
+  .form {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  .submit {
+    margin: 0;
+  }
+}
